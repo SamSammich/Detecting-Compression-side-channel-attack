@@ -1,5 +1,6 @@
 
-data = input('Input your text -->:')
+
+
 def lz77_compress(data, window_size, lookahead_buffer_size):
     compressed_data = []
     current_position = 0
@@ -29,9 +30,3 @@ def lz77_compress(data, window_size, lookahead_buffer_size):
     return compressed_data
 
 
-
-window_size = 4
-lookahead_buffer_size = 5
-
-compressed_data = lz77_compress(data, window_size, lookahead_buffer_size)
-print("Compressed data:", compressed_data)
